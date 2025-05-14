@@ -1,4 +1,6 @@
 # JKFLIPFLOP-USING-IF-ELSE
+
+
 ## NAME : DHANUSH P
 ## REG NO : 212223230042
 ## DATE :
@@ -36,41 +38,34 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-```
-1.Type the program in Quartus software.
-2.Compile and run the program.
-3.Generate the RTL schematic and save the logic diagram.
-4.Create nodes for inputs and outputs to generate the timing diagram.
-5.For different input combinations generate the timing diagram
-```
+/* write all the steps invloved */
 
 **PROGRAM**
 
-```
-Developed by: T.Hudaifa Mahzumia 
-Register No: 24901157
 
-module deexp(j,k,clk,q,qbar);
-input j,k,clk;
+```
+module ex7(J,K,clk,q,qbar);
+input J,K,clk;
 output reg q;
 output reg qbar;
 initial q=0;
 initial qbar=1;
-always@(posedge clk)
+always @(posedge clk)
 begin
-q=((j&(~q))|((~k)&q));
+q=((J&(~q))|((~K)&q));
 qbar=~q;
 end
 endmodule
 ```
-
 **RTL LOGIC FOR FLIPFLOPS**
-![Screenshot (53)](https://github.com/user-attachments/assets/71df17cb-5d80-4e72-bb83-5933aaa40e13)
+
+![Screenshot 2025-05-02 105621](https://github.com/user-attachments/assets/e15e2905-3cef-491a-a2f6-94a37cf9ee6d)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![Screenshot (54)](https://github.com/user-attachments/assets/ab02e869-a2fb-4fe6-962c-5994e302d04e)
+
+![Screenshot 2025-05-02 105800](https://github.com/user-attachments/assets/8b09ed50-ad25-4033-93b7-41f138d4b91e)
 
 
 **RESULTS**
- Thus the JK flipflop implemented successfully and truth table has verified
+Implement  JK flipflop using verilog and validating their functionality using their functional tables was successful.
